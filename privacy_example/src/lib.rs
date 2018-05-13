@@ -10,9 +10,11 @@ pub mod outermost {
     }
 }
 
+use outermost::inside::secret_function;
+
 pub fn try_me() {
     outermost::middle_function();
     outermost::middle_secret_function();
     outermost::inside::inner_function();
-    outermost::inside::secret_function();
+    secret_function();
 }
